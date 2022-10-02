@@ -1,0 +1,108 @@
+/* Header */
+.header {
+  background-color: #112D4E;
+  height: 80px;
+  width: 100%;
+  padding: 0 80px;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  transition: top .6s;
+}
+.headerSobra {
+  box-shadow: rgba(112, 112, 112, 0.644) 0px 2px 20px;
+}
+.header__noVisible {
+  top: -80px;
+}
+
+/* Titulo */
+.header__contenedorLogo {
+  position: relative;
+  height: 100%;
+  width: 200px;
+}
+.header > .header__contenedorLogo > h2 {
+  font-size: 2em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.border {
+  color: black;
+  text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+.wave {
+  color: white;
+  animation: shift 3s ease-in-out infinite;
+}
+@keyframes shift {
+  0%, 100% {
+    clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+
+/* Navbar */
+.header__nav {
+  /* background-color: red; */
+  max-width: 700px;
+  min-width: 400px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header__nav > ul {
+  width: 100%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__nav > ul > li {
+  list-style: none;
+  transition-duration: .2s;
+  position: relative;
+}
+.header__nav > ul > li:hover {
+  transform: translateY(-3px);
+}
+.link {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 200;
+  font-size: 1em;
+}
+.link::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  border-bottom: solid 2px #019fb6;
+  transition-duration: .2s;
+  opacity: 0;
+}
+.link:hover::after {
+  opacity: 1;
+}
+.linkActive {
+  color: yellow;
+}

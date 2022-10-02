@@ -1,0 +1,19 @@
+.slideUp {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  transition-duration: .2s;
+  z-index: 50;
+}
+.icono {
+  font-size: 2.5em;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.icono:hover {
+  color: yellow;
+}

@@ -1,0 +1,12 @@
+.characters__container {
+  height: calc(100vh - 80px);
+  width: 100%;
+  display: flex;
+  padding: 50px 80px;
+  background-image: linear-gradient(to bottom, #112D4E 0%, #3F72AF 100%) !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}

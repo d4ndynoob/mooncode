@@ -1,0 +1,115 @@
+.footer {
+  height: 300px;
+  width: 100%;
+  padding: 20px 110px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  column-gap: 2em;
+  user-select: none;
+}
+.footer__columna {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5em;
+}
+
+
+/* PRIMERA COLUMNA */
+.footer__imagenAstro {
+  transition-duration: .2s;
+}
+.footer__imagenAstro:hover {
+  transform: scale(105%);
+}
+
+/* SEGUNDA COLUMNA */
+/* TEXTO */
+.footer__contenedorLogo {
+  position: relative;
+  width: 60%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid yellow;
+}
+.footer__contenedorLogo > h3 {
+  position: absolute;
+  font-size: 2em;
+}
+
+.border {
+  color: black;
+  text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+.wave {
+  color: white;
+  animation: shift 3s ease-in-out infinite;
+}
+@keyframes shift {
+  0%, 100% {
+    clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+
+/* ICONOS */
+.footer__contenedorRedesSociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2em;
+}
+.footer__icono {
+  font-size: 2.5em;
+  color: whitesmoke;
+  transition-duration: .3s;
+}
+.footer__icono:hover {
+  transform: scale(110%);
+}
+.footer__iconoFacebook:hover {
+  color: #3b5998;
+}
+.footer__iconoTwitter:hover {
+  color: #00acee;
+}
+.footer__iconoInstagram:hover {
+  color: #dd2a7b;
+}
+
+
+
+/* TERCERA COLUMNA */
+.footer__contenedorLinks {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+.footer__titulo {
+  font-size: 1.3em;
+  color: whitesmoke;
+}
+.footer__link {
+  color: whitesmoke;
+  text-decoration: none;
+  padding-left: 8px;
+  font-size: .9em;
+  font-weight: 200;
+  border-left: 2px solid transparent;
+  transition-duration: .2s;
+}
+.footer__link:hover {
+  color: yellow;
+  border-left: 2px solid yellow;
+}
